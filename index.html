@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Xoshimov Omadbek">
+    <meta name="Discription " content="Treyler ko'rish uchun veb site">
+    <title>Muvies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="wrapper">
+                <a href="#">
+                    <img src="./img/Logo.png" alt="">
+                </a>
+                <ul class="header__list">
+                    <select name="" id="" class="header__select" onchange="fnYear(value)">
+                        <option value="" hidden>Year </option>
+                        <option value="old">old </option>
+                        <option value="new">new </option>
+                    </select>
+                    <select name="" id="" class="header__selectt" onchange="fnRaiting(value)">
+                        <option value="" hidden>Ranting </option>
+                        <option value="Max reyting ">Max reyting </option>
+                        <option value="Min reyting">Min reyting </option>
+                    </select>
+                    <select onchange="fnCatecory(value)" name="" id="" class="header__selecct">
+                        <option value="" hidden>Category</option>
+                       
+                        
+                    </select>
+                </ul>
+                <form action="#" onsubmit="fnSearch(event)" class="header__form">
+                    <input type="text" class="header_inp " placeholder="Search">
+                    <button class="header__btn" type="submit"> Subscribe</button>
+                    <!-- <label for="#" class="header__formlabel"><i class="bi bi-search"></i></label> -->
+
+                </form>
+                <div class="buttonn">
+              
+                    <button class="header__btnn"> LOG IN</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div id="carouselExampleRide" class="carousel slide main__section" data-bs-ride="true">
+                <div class="carousel-inner main__div">
+                    <div class="carousel-item main__img active">
+                        <img src="https://sportshub.cbsistatic.com/i/2022/10/17/b22d4700-3f08-4b96-a363-af7289457e41/spider-man-no-way-home-extended-cut-version.jpg" class="d-block w-100 slide__img" alt="...">
+                    </div>
+                    <div class="carousel-item main__img">
+                        <img src="https://www.slantmagazine.com/wp-content/uploads/2009/07/merlin.jpg" class="d-block w-100   slide__img" alt="...">
+                    </div>
+                    <div class="carousel-item main__img">
+                        <img src="./img/titanicc.jfif" class="d-block w-100   slide__img" alt="...">
+                    </div>
+                    <div class="carousel-item main__img">
+                        <img src="./img/Marvel-Movies-In-Order-Avengers-Endgame-ef06bfd.jpg" class="d-block w-100"
+                            slide__img alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleRide"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                    <span class="visually-hidden ">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+
+    <section class="Muviese">
+        <div class="container">
+            <h1 class="Muviese__title">Online kinolar tomosha qiling</h1>
+            <ul class="Muviese__list">
+
+            </ul>
+            <ul class="Muviese__listt">
+
+            </ul>
+        </div>
+    </section>
+   <div class="container PAGANATION__wrapper">
+    <ul class="PAGANATION d-flex ">
+    </ul>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- <p class="infos">
+	You can switch pages using your mouse wheel !<br />
+	The amount of rows per pages depends on the height of your window when loading the page.
+</p>
+
+<div class="table-container" style="--data-limit: 9">
+	<div class="table" id="table-0" data-limit="9">
+		<div class="table-row table-heading">
+			<div class="table-col">
+				#
+			</div>
+			<div class="table-col">
+				First name
+			</div>
+			<div class="table-col">
+				Last name
+			</div>
+			<div class="table-col">
+				Title
+			</div>
+			<div class="table-col">
+				Completed
+			</div>
+		</div>
+		<div class="table-row" data-copy="103">
+			<div class="table-col">
+				<span class="auto-increment">0</span>
+			</div>
+			<div class="table-col">
+				<span class="auto-firstname"></span>
+			</div>
+			<div class="table-col">
+				<span class="auto-lastname"></span>
+			</div>
+			<div class="table-col">
+				<span class="auto-title"></span>
+			</div>
+			<div class="table-col">
+				<span class="auto-integer" min="0" max="250"></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="pagination-container">
+		<div class="d-flex row flex-fill align-items-end justify-content-center">
+			<span class="pagination-info"></span>
+			<button class="pagination-extreme pagination-left">
+				<i class="fa-solid fa-angles-left"></i>
+			</button>
+			<button class="pagination-extreme pagination-left-one">
+				<i class="fa-solid fa-angle-left"></i>
+			</button>
+			<div class="d-flex flex-fill justify-content-center">
+				<div class="pagination-wrapper">
+					<ul class="pagination" data-table="table-0"></ul>
+				</div>
+			</div>
+			<button class="pagination-extreme pagination-right-one">
+				<i class="fa-solid fa-angle-right"></i>
+			</button>
+			<button class="pagination-extreme pagination-right">
+				<i class="fa-solid fa-angles-right"></i>
+			</button>
+		</div>
+	</div>
+	
+	<div class="progress-bar">
+		<div class="progress-point"></div>
+	</div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="./JS/movies.js"></script>
+<script src="./JS/main.js"></script>
+<video preload="none" crossorigin="anonymous" src="https://kxcdn.ru/Tor_4_HD_2022_Daxshat.Net.mp4"
+    x-webkit-airplay="allow" disableremoteplayback="true" pip="false"
+    style="position: static; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: contain; transition: filter 0.2s linear 0s; min-height: auto; max-height: none; min-width: auto; max-width: none;"></video>
+
+</html>
