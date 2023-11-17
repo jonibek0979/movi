@@ -232,7 +232,7 @@ function fnPagenation(slug) {
   fnmapperPlaceholder()
   setTimeout(() => {
     fnMapper(PartMovies.slice((slug - 1) * 10, slug * 10));
-  }, 6000)
+  }, 500)
 
 }
 
